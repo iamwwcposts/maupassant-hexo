@@ -105,6 +105,7 @@ if theme.gitalk.enable == true
         owner: '#{theme.gitalk.owner}',
         admin: ['#{theme.gitalk.admin}'],
         id: md5(location.pathname),
+        number: +(page.issueid ? page.issueid : ""),
         distractionFreeMode: false
       })
       gitalk.render('container')
