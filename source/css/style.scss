@@ -35,6 +35,12 @@ body {
 .content_container {
     padding-right: 50px;
     padding-top: 20px;
+    .post-container {
+      box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+      padding: 0px 20px 20px 20px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
 }
 a, button.submit {
     color: #6E7173;
