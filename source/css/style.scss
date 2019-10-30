@@ -120,11 +120,13 @@ div {
     word-wrap: break-word;
     .widget {
         .icon-container {
+          display: flex;
+          align-items: center;
           font-size: 20px;
           padding: 20px 0 0 0;
           .icon {
-            height: 20px;
-            width: 20px;
+            height: 25px;
+            width: 26px;
           }
           .link {
             padding-left: 10px;
@@ -461,6 +463,10 @@ div {
     #sidebar {
         border-left-width: 0px;
         padding-left: 0px;
+        .icon {
+          height: 20px !important;
+          width: 20px !important;
+        }
     }
     #header {
         .site-name {
@@ -487,6 +493,12 @@ div {
     }
     .content_container {
         padding-right: 0;
+    }
+    #sidebar {
+      .icon {
+        height: 20px !important;
+        width: 20px !important;
+      }
     }
 }
 
