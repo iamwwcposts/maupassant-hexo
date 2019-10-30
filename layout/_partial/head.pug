@@ -16,6 +16,13 @@ head
     link(rel='Shortcut Icon', type='image/x-icon', href=url_for('favicon.ico'))
     link(rel='apple-touch-icon', href=url_for('apple-touch-icon.png'))
     link(rel='apple-touch-icon-precomposed', href=url_for('apple-touch-icon.png'))
+    style(type="text/css").
+      .icon {
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    script(src=theme.fonturl)
     if config.feed
       link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
     if theme.google_analytics
