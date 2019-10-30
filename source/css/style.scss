@@ -122,6 +122,10 @@ div {
         .icon-container {
           font-size: 20px;
           padding: 20px 0 0 0;
+          .icon {
+            height: 20px;
+            width: 20px;
+          }
           .link {
             padding-left: 10px;
             font-size: 18px;
