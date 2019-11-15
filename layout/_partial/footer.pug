@@ -1,2 +1,6 @@
-#footer= 'Copyright © ' + date(Date.now(), 'YYYY') + ' '
-  a(href=url_for('.'), rel='nofollow')= config.title + '.'
+#footer
+  #cp= 'Copyright © ' + date(Date.now(), 'YYYY') + ' '
+    a(href=url_for('.'), rel='nofollow')= config.title + '.'
+  if theme.beian.enable == true
+    #beian
+      a(href=url_for(theme.beian.url))= theme.beian.title
