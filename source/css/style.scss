@@ -243,9 +243,9 @@ div {
         margin: 15px 0 0;
         color: #6E7173;
         float: left;
-        display: inline;
         text-indent: .15em;
         display: flex;
+        flex-wrap: wrap;
         &:before {
               font-family: "FontAwesome";
               content: "\f073";
