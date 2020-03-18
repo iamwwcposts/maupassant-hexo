@@ -16,7 +16,8 @@ block content
             +title(post)
         .post-meta
           .post-date= post.date.format(config.date_format)
-          .post-tags= ' | '
+          - var have = post.tags.data.length > 0 ? ' | ' : ''
+          .post-tags=have
             each tag in post.tags.data
               a.post-tag(href= '/'+tag.path)!=tag.name
         if theme.disqus
