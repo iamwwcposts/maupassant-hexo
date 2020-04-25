@@ -14,7 +14,12 @@ block content
           include _partial/helpers.pug
           a(href=url_for(post.path))
             +title(post)
-        .post-meta= post.date.format(config.date_format)
+        .post-meta
+          .post-date=post.date.format(config.date_format)
+          .post-tag
+            each tag in post.tags
+              a.tag(href=tag.path)!= tag.name
+            
         if theme.disqus
           a.disqus-comment-count(data-disqus-identifier=post.path, href=url_for(post.path) + '#disqus_thread')
         if theme.changyan
