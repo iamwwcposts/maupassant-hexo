@@ -219,13 +219,33 @@ div {
             color: #555;
         }
     }
+
+    .post-tags{
+      display: flex;
+      .post-tag:first-child::before{
+        font-family: "FontAwesome";
+        content: "\f02c";
+        padding-right: 0.3em;
+      }
+
+      .post-tag:first-child{
+        content: " | ";
+        margin-left: 4px;
+      }
+
+      .post-tag{
+        margin-right: 4px;
+      }
+    }
+
     .post-meta {
         padding: 0;
         margin: 15px 0 0;
         color: #6E7173;
         float: left;
-        display: inline;
         text-indent: .15em;
+        display: flex;
+        flex-wrap: wrap;
         &:before {
               font-family: "FontAwesome";
               content: "\f073";
