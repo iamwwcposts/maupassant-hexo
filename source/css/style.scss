@@ -211,6 +211,7 @@ div {
 .post {
     padding: 25px 0 15px;
     .post-title {
+        word-break: break-word;
         margin: 0;
         color: #555;
         text-align: left;
